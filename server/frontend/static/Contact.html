@@ -1,45 +1,188 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Contact Us - Dealership</title>
-    <!-- Required CSS Link -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us - Best Cars Dealership</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    >
+
+    <style>
+        body {
+            background-color: #f4f6f9;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #212529 !important;
+        }
+
+        .navbar-brand,
+        .navbar-nav .nav-link {
+            color: white !important;
+        }
+
+        .navbar-nav .nav-link.active {
+            color: #ffc107 !important;
+            font-weight: bold;
+            border-bottom: 2px solid #ffc107;
+        }
+
+        .contact-container {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-image {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .contact-card {
+            height: 100%;
+            padding: 20px;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+        }
+
+        .contact-card h2 {
+            font-size: 20px;
+            color: #0056b3;
+        }
+
+        .contact-card p {
+            overflow-wrap: anywhere;
+            margin-bottom: 8px;
+        }
+
+        .contact-heading {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+    </style>
 </head>
+
 <body>
-    <!-- Required Navigation and Links -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Best Cars</a>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="/">Best Cars</a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="/">Home</a>
                 </li>
+
                 <li class="nav-item">
                     <a class="nav-link" href="/about">About Us</a>
                 </li>
+
                 <li class="nav-item active">
-                    <a class="nav-link" href="/contact">Contact Us</a>
+                    <a
+                        class="nav-link active"
+                        href="/contact"
+                        aria-current="page"
+                    >Contact Us</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <div class="container mt-5 text-center">
-        <!-- Required Image -->
-        <img src="contact_icon.jpg" alt="Contact Us Logo" style="width: 150px; margin-bottom: 20px;">
-        
-        <h1>Contact Us</h1>
-        
-        <div class="card mx-auto mt-4" style="max-width: 400px;">
-            <div class="card-body text-left">
-                <!-- Required Contact Details -->
-                <p><strong>Phone:</strong> 1-800-555-0199</p>
-                <p><strong>Email:</strong> support@bestcars.com</p>
-                <p><strong>Address:</strong> 123 Auto Drive, Detroit, MI 48201</p>
-                <p><strong>Office Hours:</strong> Mon-Fri, 9:00 AM - 6:00 PM</p>
-            </div>
+    <!-- Contact Us Content -->
+    <main class="container contact-container">
+
+        <div class="contact-heading">
+            <img
+                class="contact-image"
+                src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=400&h=400&fit=crop"
+                alt="Contact and customer support"
+            >
+
+            <h1>Contact Us</h1>
+
+            <p class="lead">
+                Have questions about our vehicles or dealership services?
+                Our team is here to help.
+            </p>
         </div>
-    </div>
+
+        <div class="row">
+
+            <div class="col-md-6 mb-3">
+                <section class="contact-card">
+                    <h2>Contact Information</h2>
+
+                    <p><strong>Phone:</strong>
+                        <a href="tel:18005550199">1-800-555-0199</a>
+                    </p>
+
+                    <p><strong>Email:</strong>
+                        <a href="mailto:support@bestcars.com">
+                            support@bestcars.com
+                        </a>
+                    </p>
+
+                    <p><strong>Address:</strong>
+                        123 Auto Drive, Detroit, MI 48201, USA
+                    </p>
+                </section>
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <section class="contact-card">
+                    <h2>Business Hours</h2>
+
+                    <p><strong>Monday-Friday:</strong>
+                        9:00 AM - 6:00 PM
+                    </p>
+
+                    <p><strong>Saturday:</strong>
+                        10:00 AM - 4:00 PM
+                    </p>
+
+                    <p><strong>Sunday:</strong> Closed</p>
+
+                    <p>
+                        Our support team can assist with dealership,
+                        vehicle, and website inquiries.
+                    </p>
+                </section>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Bootstrap JavaScript dependencies -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 </body>
 </html>
+```
