@@ -1,28 +1,127 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Car Dealership</title>
-    <!-- Correct CSS link -->
-    <link rel="stylesheet" href="style.css">
+
+    <title>About Us - Best Cars Dealership</title>
+
+    <!-- Stylesheet link -->
+    <link rel="stylesheet" href="About.css">
+
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; color: #333; }
-        nav { background-color: #333; padding: 1rem; color: white; }
-        nav a { color: white; text-decoration: none; margin-right: 20px; font-weight: bold; }
-        nav a.active { color: #ffc107; }
-        .container { max-width: 1100px; margin: 40px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        h1 { color: #222; text-align: center; margin-bottom: 20px; }
-        .intro { text-align: center; margin-bottom: 40px; font-size: 1.1em; color: #555; }
-        .team-grid { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; }
-        .card { background: #fff; border: 1px solid #ddd; border-radius: 6px; width: 300px; text-align: center; padding: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
-        .card img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 15px; border: 3px solid #007bff; }
-        .card h3 { margin: 10px 0 5px; color: #333; }
-        .card .role { color: #007bff; font-weight: bold; margin-bottom: 10px; }
-        .card p { font-size: 0.9em; color: #666; margin-bottom: 15px; }
-        .card .email { font-size: 0.85em; color: #333; background: #e9ecef; padding: 5px 10px; border-radius: 4px; display: inline-block; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        nav {
+            background-color: #222;
+            padding: 16px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #ffc107;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 35px auto;
+            padding: 25px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #222;
+        }
+
+        .intro {
+            text-align: center;
+            line-height: 1.8;
+            font-size: 17px;
+            margin-bottom: 35px;
+        }
+
+        .team-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .card {
+            width: 280px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-sizing: border-box;
+            background: #fff;
+        }
+
+        .card img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #007bff;
+        }
+
+        .card h2 {
+            font-size: 21px;
+            margin-bottom: 8px;
+        }
+
+        .role {
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .card p {
+            line-height: 1.5;
+        }
+
+        .email {
+            display: inline-block;
+            overflow-wrap: anywhere;
+            color: #0056b3;
+            margin-top: 5px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 15px;
+                padding: 15px;
+            }
+
+            .team-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 100%;
+                max-width: 320px;
+            }
+        }
     </style>
 </head>
+
 <body>
 
     <nav>
@@ -31,38 +130,84 @@
         <a href="/contact">Contact Us</a>
     </nav>
 
-    <div class="container">
-        <h1>About Our Dealership</h1>
-        <p class="intro">Welcome to Car Dealership Portal, your trusted platform for exploring vehicles, reading verified dealer reviews, and connecting with top-rated automotive professionals.</p>
+    <main class="container">
 
-        <div class="team-grid">
+        <h1>About Us</h1>
+
+        <p class="intro">
+            Welcome to Best Cars dealership, home to the best cars in
+            North America. We deal in sale of domestic and imported cars
+            at reasonable prices.
+        </p>
+
+        <section class="team-grid">
+
             <!-- Team Member 1 -->
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb" alt="Kritika Bhartiya">
-                <h3>Kritika Bhartiya</h3>
-                <div class="role">Lead Full-Stack Developer</div>
-                <p>Specializing in Django microservices, cloud architecture, and building robust end-to-end web applications.</p>
-                <div class="email">kritika.bhartiya@dealership.com</div>
-            </div>
+            <article class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb"
+                    alt="Portrait of Mily"
+                >
+
+                <h2>Mily</h2>
+
+                <p class="role">Engineer</p>
+
+                <p>
+                    Hi, I am Mily. I am a front end engineer who works
+                    on creating responsive and user-friendly interfaces.
+                </p>
+
+                <a class="email" href="mailto:mily@gmail.com">
+                    mily@gmail.com
+                </a>
+            </article>
 
             <!-- Team Member 2 -->
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d" alt="Alex Morgan">
-                <h3>Alex Morgan</h3>
-                <div class="role">Frontend Architect</div>
-                <p>Passionate about creating clean, responsive user interfaces using modern JavaScript frameworks and CSS.</p>
-                <div class="email">alex.morgan@dealership.com</div>
-            </div>
+            <article class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d"
+                    alt="Portrait of Alex Morgan"
+                >
+
+                <h2>Alex Morgan</h2>
+
+                <p class="role">Backend Developer</p>
+
+                <p>
+                    I develop application features and backend services
+                    that help the dealership platform run reliably.
+                </p>
+
+                <a class="email" href="mailto:alex.morgan@example.com">
+                    alex.morgan@example.com
+                </a>
+            </article>
 
             <!-- Team Member 3 -->
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2" alt="Sophia Chen">
-                <h3>Sophia Chen</h3>
-                <div class="role">Database & QA Engineer</div>
-                <p>Ensuring data integrity, secure user authentication workflows, and high-performance backend database queries.</p>
-                <div class="email">sophia.chen@dealership.com</div>
-            </div>
-        </div>
-    </div>
+            <article class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2"
+                    alt="Portrait of Sophia Chen"
+                >
+
+                <h2>Sophia Chen</h2>
+
+                <p class="role">QA Engineer</p>
+
+                <p>
+                    I test application functionality and help maintain
+                    the quality, reliability, and usability of the platform.
+                </p>
+
+                <a class="email" href="mailto:sophia.chen@example.com">
+                    sophia.chen@example.com
+                </a>
+            </article>
+
+        </section>
+    </main>
+
 </body>
 </html>
+```
