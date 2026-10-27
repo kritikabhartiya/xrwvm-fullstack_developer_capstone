@@ -1,7 +1,9 @@
-﻿Watching for file changes with StatReloader
+Desktop\xrwvm-fullstack_developer_capstone\server> python manage.py runserver
+Watching for file changes with StatReloader
 Performing system checks...
 
 System check identified no issues (0 silenced).
+October 27, 2026 - 19:15:14
 Django version 6.1.2, using settings 'server.settings'
-Starting development server at http://127.0.0.1:8000/
-Quit the server with CTRL-C.
+Starting WSGI development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
